@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bw.mapper.GoodsDao">
+
+	<select id="queryGoodsAll" resultType="com.bw.entity.Goods">
+		select g.gid,g.gname,g.price,b.bname,c.cname from  tgoods  g,tbrand b, tcategory c where g.cid=c.cid and g.bid=b.bid;
+	</select>
+	
+	
+	<!-- 查询所有的分类信息 -->
+	<select id="queryCatAll" resultType="com.bw.entity.Category">
+		select * from tcategory
+	</select>
+	
+	
+	<select id="queryBrandByCid" parameterType="int" resultType="com.bw.entity.Brand">
+		select * from tbrand b ,tcatebrand cb where cb.pid=b.bid and cb.cid=#{0}
+	</select>
+	
+	
+	<!-- 添加商品 -->
+	<insert id="addGoods" parameterType="com.bw.entity.Goods">
+		insert into tgoods (gname,price,gdesc,cid,bid) values (#{gname},#{price},#{gdesc},#{cid},#{bid})
+	</insert>
+	
+	
+</mapper>
