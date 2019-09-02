@@ -22,7 +22,7 @@ public class GoodsController {
 	@RequestMapping("queryGoodsAll.do")
 	public String queryGoodsAll(Model model){
 		List<Goods> list = service.queryGoodsAll();
-		model.addAttribute("list", list);
+		model.addAttribute("list", list); 
 		return "index";
 	}
 	
