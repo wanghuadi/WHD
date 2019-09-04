@@ -25,11 +25,13 @@ public class GoodsController {
 		model.addAttribute("list", list); 
 		//  test  github
 
+
 		System.out.println("afafasfsf");
 
+
+		//wanghuadi   测试冲突
 		System.out.println("华帝真帅");
 
-		
 		System.out.println("666");
 		return "index";
 	}
