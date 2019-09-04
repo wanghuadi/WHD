@@ -24,6 +24,7 @@ public class GoodsController {
 		List<Goods> list = service.queryGoodsAll();
 		model.addAttribute("list", list); 
 		//  test  github
+		//wanghuadi   测试冲突
 		return "index";
 	}
 	
