@@ -23,7 +23,7 @@ public class GoodsController {
 	public String queryGoodsAll(Model model){
 		List<Goods> list = service.queryGoodsAll();
 		model.addAttribute("list", list); 
-		System.out.println("sssssssssss"); //xxx
+		System.out.println("sssssssddddssss"); //xxx
 		return "index";
 	}
 	
