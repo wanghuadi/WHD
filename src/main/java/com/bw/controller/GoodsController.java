@@ -25,6 +25,7 @@ public class GoodsController {
 		model.addAttribute("list", list); 
 		System.out.println("sssssssddddddddssss"); //xxx
 		System.out.println("ddddddddddddd");
+		System.out.println("cccccccccccc");
 		return "index";
 	}
 	
