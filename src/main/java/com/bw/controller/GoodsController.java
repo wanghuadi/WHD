@@ -25,6 +25,7 @@ public class GoodsController {
 		model.addAttribute("list", list); 
 		//  test  github
 		System.out.println("华帝真帅");
+		System.out.println("真是没毛病");
 		return "index";
 	}
 	
