@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: WHD
+Bundle-SymbolicName: WHD
+Bundle-Version: 1.0.0.qualifier
+Export-Package: com.bw.controller,
+ com.bw.entity,
+ com.bw.mapper,
+ com.bw.service,
+ com.bw.utils
