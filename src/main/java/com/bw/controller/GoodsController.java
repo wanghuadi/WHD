@@ -24,6 +24,7 @@ public class GoodsController {
 		List<Goods> list = service.queryGoodsAll();
 		model.addAttribute("list", list); 
 		//  test  github
+		System.out.println("afafasfsf");
 		return "index";
 	}
 	
