@@ -23,6 +23,7 @@ public class GoodsController {
 	public String queryGoodsAll(Model model){
 		List<Goods> list = service.queryGoodsAll();
 		model.addAttribute("list", list); 
+		//  test  github
 		return "index";
 	}
 	
