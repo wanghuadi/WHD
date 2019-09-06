@@ -24,7 +24,19 @@ public class GoodsController {
 		List<Goods> list = service.queryGoodsAll();
 		model.addAttribute("list", list); 
 		//  test  github
+
 		System.out.println("vhjjj");
+
+
+
+		System.out.println("afafasfsf");
+
+
+		//wanghuadi   测试冲突
+		System.out.println("华帝真帅");
+
+		System.out.println("666");
+//github.com/wanghuadi/WHD.git
 		return "index";
 	}
 	
